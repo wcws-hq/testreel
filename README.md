@@ -4,6 +4,29 @@ Paste a GitHub repo URL. Testreel installs and runs it in a throwaway Docker con
 
 Everything runs on your machine. The voice is a local model. The only outside services are GitHub (to read repos), the chat model you configure, and YouTube if you choose to upload.
 
+## Screenshots
+
+![The home page: paste a repo, see the requirements, pick a trending repo that can be run](docs/images/home.png)
+
+| | |
+|---|---|
+| ![Trending repos that passed the check, and past runs](docs/images/trending.png) | ![A finished run with the long video and the Short](docs/images/run-page.png) |
+| Trending repos that pass the same check a run starts with | A finished run: long video, Short, and every stage on the left |
+
+What it produces, from a real run on [Jakubantalik/transitions.dev](https://github.com/Jakubantalik/transitions.dev):
+
+| | |
+|---|---|
+| ![Opening hook of the long video](docs/images/video-hook.jpg) | ![The app being used in a real browser during the test](docs/images/video-browser-test.jpg) |
+| Hook, with the measured boot time | The real app, driven in a headless browser (cursor and clicks are visible) |
+| ![Measured times scene](docs/images/video-measured-times.jpg) | ![Verdict scene](docs/images/video-verdict.jpg) |
+| Numbers that come from the container, not the model | Verdict and the failures the test found |
+
+| | |
+|---|---|
+| <img src="docs/images/short-terminal.jpg" alt="A frame of the vertical Short: a terminal replay of the real commands" width="260"> | <img src="docs/images/thumbnail.jpg" alt="One of three generated thumbnails" width="520"> |
+| The Short replays the real commands and output | One of three generated thumbnails |
+
 ## What makes it different
 
 Most "AI review" tools describe a project from its README. Testreel runs it.
