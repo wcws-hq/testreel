@@ -1,0 +1,11 @@
+# Python packages for the local voice (src/pipeline/python/kokoro.py). Pinned to the versions it was developed and tested with.
+# av is pinned on purpose: faster-whisper 1.2.1 breaks with av 19 ("open() got an unexpected keyword argument 'metadata_errors'").
+kokoro-onnx==0.6.1
+faster-whisper==1.2.1
+soundfile==0.14.0
+numpy==2.5.4
+onnxruntime==1.31.0
+av==15.1.0
+ctranslate2==4.8.2
+tokenizers==0.23.3
+huggingface_hub==2.2.0

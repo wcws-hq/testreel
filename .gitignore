@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.venv/
+# Run data lives outside the repo, but keep stray renders and keys out if someone points TESTREEL_DATA here.
+runs/
+*.mp4
+*.wav
+*.onnx
+*.bin
+.youtube/
